@@ -222,7 +222,7 @@ export default function App() {
       title: "Reflex™ Chrome Luxury",
       subtitle: "Mirrored High-Shine Series",
       category: "Reflex Chrome",
-      src: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80",
+      src: "./src/assets/images/ballons.avif",
       heightClass: "h-[380px]",
     },
     {
@@ -230,7 +230,7 @@ export default function App() {
       title: "Macaron Pastel Dreams",
       subtitle: "Soft Matte Party Aesthetics",
       category: "Pastel Matte",
-      src: "https://images.unsplash.com/photo-1478812954026-9c750f0e89fc?auto=format&fit=crop&w=800&q=80",
+      src: "./src/assets/images/group.avif",
       heightClass: "h-[220px]",
     },
     {
@@ -238,7 +238,7 @@ export default function App() {
       title: "Organic Installation Craft",
       subtitle: "Bespoke Arch Styling",
       category: "Fashion Solids",
-      src: "https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?auto=format&fit=crop&w=800&q=80",
+      src: "./src/assets/images/wave.avif",
       heightClass: "h-[320px]",
     },
     {
@@ -246,7 +246,7 @@ export default function App() {
       title: "Golden Reflex Radiance",
       subtitle: "VIP Metallic Accents",
       category: "Luxury Metallic",
-      src: "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=800&q=80",
+      src: "./src/assets/images/drink.avif",
       heightClass: "h-[280px]",
     },
     {
@@ -254,7 +254,7 @@ export default function App() {
       title: "Fashion Matte & Sand Tones",
       subtitle: "Elegant Chalky Textures",
       category: "Dune Sand",
-      src: "https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=800&q=80",
+      src: "./src/assets/images/confette.avif",
       heightClass: "h-[180px]",
     },
     {
@@ -262,7 +262,7 @@ export default function App() {
       title: "Celestial Celebration",
       subtitle: "Pastel Warm Tones",
       category: "Celebration",
-      src: "https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?auto=format&fit=crop&w=800&q=80",
+      src: "./src/assets/images/balloons2.avif",
       heightClass: "h-[420px]",
     }
   ];
