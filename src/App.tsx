@@ -17,8 +17,16 @@ import {
   ExternalLink,
   Info
 } from 'lucide-react';
+import baloons from "./assets/images/balloons.avif";
+import baloons2 from "./assets/images/balloons2.avif";
+import confetti from "./assets/images/confetti.avif";
+import drink from "./assets/images/drink.avif";
+import group from "./assets/images/group.avif";
+import wave from "./assets/images/wave.avif";
 
-const heroBg = "https://images.unsplash.com/photo-1513201099495-a6699da48be8?auto=format&fit=crop&w=1600&q=80";
+
+
+const heroBg = "";
 
 interface FloatingBalloonProps {
   id: number;
@@ -222,7 +230,7 @@ export default function App() {
       title: "Reflex™ Chrome Luxury",
       subtitle: "Mirrored High-Shine Series",
       category: "Reflex Chrome",
-      src: "./src/assets/images/balloons.avif",
+      src: baloons,
       heightClass: "h-[380px]",
     },
     {
@@ -230,7 +238,7 @@ export default function App() {
       title: "Macaron Pastel Dreams",
       subtitle: "Soft Matte Party Aesthetics",
       category: "Pastel Matte",
-      src: "./src/assets/images/group.avif",
+      src: group,
       heightClass: "h-[220px]",
     },
     {
@@ -238,7 +246,7 @@ export default function App() {
       title: "Organic Installation Craft",
       subtitle: "Bespoke Arch Styling",
       category: "Fashion Solids",
-      src: "./src/assets/images/wave.avif",
+      src: wave,
       heightClass: "h-[320px]",
     },
     {
@@ -246,7 +254,7 @@ export default function App() {
       title: "Golden Reflex Radiance",
       subtitle: "VIP Metallic Accents",
       category: "Luxury Metallic",
-      src: "./src/assets/images/drink.avif",
+      src: drink,
       heightClass: "h-[280px]",
     },
     {
@@ -254,7 +262,7 @@ export default function App() {
       title: "Fashion Matte & Sand Tones",
       subtitle: "Elegant Chalky Textures",
       category: "Dune Sand",
-      src: "./src/assets/images/confette.avif",
+      src: confetti,
       heightClass: "h-[180px]",
     },
     {
@@ -262,7 +270,7 @@ export default function App() {
       title: "Celestial Celebration",
       subtitle: "Pastel Warm Tones",
       category: "Celebration",
-      src: "./src/assets/images/balloons2.avif",
+      src: baloons2,
       heightClass: "h-[420px]",
     }
   ];
