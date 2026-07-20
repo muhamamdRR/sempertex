@@ -1,0 +1,6 @@
+{
+  "name": "Alqadah — Sempertex UAE Distributor",
+  "description": "Alqadah is the authorized Sempertex balloon distributor in the United Arab Emirates since 1989, providing premium natural latex balloons.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
