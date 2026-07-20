@@ -222,7 +222,7 @@ export default function App() {
       title: "Reflex™ Chrome Luxury",
       subtitle: "Mirrored High-Shine Series",
       category: "Reflex Chrome",
-      src: "./src/assets/images/ballons.avif",
+      src: "./src/assets/images/balloons.avif",
       heightClass: "h-[380px]",
     },
     {
