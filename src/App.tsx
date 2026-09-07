@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from 'motion/react';
 import {
   MapPin,
   Phone,
+  Smartphone,
   Mail,
   Clock,
   Award,
@@ -17,16 +18,9 @@ import {
   ExternalLink,
   Info
 } from 'lucide-react';
-import baloons from "./assets/images/balloons.avif";
-import baloons2 from "./assets/images/balloons2.avif";
-import confetti from "./assets/images/confetti.avif";
-import drink from "./assets/images/drink.avif";
-import group from "./assets/images/group.avif";
-import wave from "./assets/images/wave.avif";
+import sempertexLogo from './assets/sempertexlogo.png';
 
-
-
-const heroBg = "";
+const heroBg = "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1600&q=80";
 
 interface FloatingBalloonProps {
   id: number;
@@ -230,7 +224,7 @@ export default function App() {
       title: "Reflex™ Chrome Luxury",
       subtitle: "Mirrored High-Shine Series",
       category: "Reflex Chrome",
-      src: baloons,
+      src: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80",
       heightClass: "h-[380px]",
     },
     {
@@ -238,7 +232,7 @@ export default function App() {
       title: "Macaron Pastel Dreams",
       subtitle: "Soft Matte Party Aesthetics",
       category: "Pastel Matte",
-      src: group,
+      src: "https://images.unsplash.com/photo-1478812954026-9c750f0e89fc?auto=format&fit=crop&w=800&q=80",
       heightClass: "h-[220px]",
     },
     {
@@ -246,7 +240,7 @@ export default function App() {
       title: "Organic Installation Craft",
       subtitle: "Bespoke Arch Styling",
       category: "Fashion Solids",
-      src: wave,
+      src: "https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?auto=format&fit=crop&w=800&q=80",
       heightClass: "h-[320px]",
     },
     {
@@ -254,7 +248,7 @@ export default function App() {
       title: "Golden Reflex Radiance",
       subtitle: "VIP Metallic Accents",
       category: "Luxury Metallic",
-      src: drink,
+      src: "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=800&q=80",
       heightClass: "h-[280px]",
     },
     {
@@ -262,7 +256,7 @@ export default function App() {
       title: "Fashion Matte & Sand Tones",
       subtitle: "Elegant Chalky Textures",
       category: "Dune Sand",
-      src: confetti,
+      src: "https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=800&q=80",
       heightClass: "h-[180px]",
     },
     {
@@ -270,7 +264,7 @@ export default function App() {
       title: "Celestial Celebration",
       subtitle: "Pastel Warm Tones",
       category: "Celebration",
-      src: baloons2,
+      src: "https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?auto=format&fit=crop&w=800&q=80",
       heightClass: "h-[420px]",
     }
   ];
@@ -283,13 +277,12 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 min-h-20 sm:min-h-24 flex items-center justify-between">
           
           {/* Logo, Brand & Slogan */}
-          <div className="flex flex-col items-start gap-1.5 justify-center">
+          <div className="flex flex-col items-start gap-1 justify-center">
             <div className="flex items-center gap-2">
               <img 
-                src="https://sempertex.com/cdn/shop/files/logosptx_1200x1200_1_210x.png?v=1629305387" 
+                src={sempertexLogo} 
                 alt="Sempertex Logo" 
-                className="w-24 sm:w-28 h-12 sm:h-14 object-contain" 
-                referrerPolicy="no-referrer"
+                className="h-8 sm:h-10 w-auto object-contain" 
               />
               <span className="bg-[#4F2683] text-white text-[9px] font-bold px-1.5 py-0.5 rounded leading-none">AE</span>
             </div>
@@ -361,7 +354,7 @@ export default function App() {
             transition={{ duration: 0.6 }}
             className="inline-flex items-center gap-2 bg-[#4F2683]/10 border border-[#4F2683]/20 backdrop-blur-md px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest text-[#4F2683] font-display"
           >
-            <Sparkles className="w-3.5 h-3.5 text-[#4F2683]" /> Colombian Premium Latex • UAE Official Channel
+            <Sparkles className="w-3.5 h-3.5 text-[#4F2683]" /> Premier Latex • UAE Official Channel
           </motion.div>
 
           <motion.div
@@ -680,7 +673,7 @@ export default function App() {
               <div className="space-y-1">
                 <h4 className="font-black tracking-wide text-base text-[#1A1A1A] font-aerial">100% Biodegradable Pure Natural Latex</h4>
                 <p className="text-sm text-gray-700 leading-relaxed font-bold font-aerial">
-                  Sempertex balloons are manufactured in Colombia using 100% natural organic rubber harvested from sustainably-managed Hevea brasiliensis plantations. They contain absolutely no fillers, plasticizers, or synthetic rubber compounds.
+                  Sempertex balloons are manufactured with premier 100% natural organic rubber harvested from sustainably-managed Hevea brasiliensis plantations. They contain absolutely no fillers, plasticizers, or synthetic rubber compounds.
                 </p>
               </div>
             </motion.div>
@@ -821,20 +814,18 @@ export default function App() {
               className="lg:col-span-5 space-y-8"
             >
               <div className="space-y-4">
-                <div className="flex items-center gap-2.5">
+                <div className="flex items-center gap-3">
                   <img 
-                    src="https://sempertex.com/cdn/shop/files/logosptx_1200x1200_1_210x.png?v=1629305387" 
+                    src={sempertexLogo} 
                     alt="Sempertex Logo" 
-                    className="w-10 h-10 object-contain bg-white rounded-full p-0.5 border border-gray-200/80 shadow-xs" 
-                    referrerPolicy="no-referrer"
+                    className="h-8 w-auto object-contain" 
                   />
-                  <div className="flex flex-col">
-                    <span className="text-xl font-black tracking-wider uppercase italic leading-none font-display text-[#1A1A1A]">Sempertex AE</span>
-                    <span className="text-[9px] text-[#4F2683] uppercase tracking-widest font-bold mt-1 font-sans">Alqadah Distributor</span>
-                  </div>
+                  <span className="bg-[#4F2683] text-white text-[9px] font-bold px-1.5 py-0.5 rounded leading-none">AE</span>
+                  <div className="h-4 w-px bg-gray-300 mx-1"></div>
+                  <span className="text-[10px] text-[#4F2683] uppercase tracking-widest font-bold font-sans">Alqadah Distributor</span>
                 </div>
                 <p className="text-gray-600 text-xs leading-relaxed font-medium">
-                  Alqadah is the sole authorized distributor for Colombian Sempertex natural rubber latex balloons in Dubai and the wider UAE region since 1989.
+                  Alqadah is the sole authorized distributor for premier Sempertex natural rubber latex balloons in Dubai and the wider UAE region since 1989.
                 </p>
               </div>
  
@@ -843,27 +834,50 @@ export default function App() {
                 <div className="flex items-start gap-3">
                   <MapPin className="w-4.5 h-4.5 text-[#4F2683] shrink-0 mt-0.5" />
                   <div>
-                    <span className="text-[#1A1A1A] font-bold uppercase tracking-wider block mb-1 font-sans">Dubai Head Office</span>
-                    <p className="text-gray-600 leading-normal">
-                      Sabkha Road, Al Sabkha, Deira, Dubai, United Arab Emirates
+                    <span className="text-[#1A1A1A] font-bold uppercase tracking-wider block mb-1 font-sans">Location</span>
+                    <p className="text-[#1A1A1A] font-bold leading-normal">Al Qadah Trading LLC.</p>
+                    <p className="text-gray-600 leading-relaxed mt-0.5">
+                      Opposite-Al khail Mall<br />
+                      Behind Green Gift centre<br />
+                      Street No:24A.<br />
+                      Latifa binth hamdan street.
                     </p>
-                    <p className="text-gray-500 font-bold uppercase mt-1">PO Box: 51221, Dubai, UAE</p>
+                    <p className="text-gray-500 font-bold uppercase mt-1">Post Box-13561-Alquoz-Dubai</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <Smartphone className="w-4.5 h-4.5 text-[#4F2683] shrink-0 mt-0.5" />
+                  <div>
+                    <span className="text-[#1A1A1A] font-bold uppercase tracking-wider block font-sans">Mobile</span>
+                    <a href="tel:+971505189925" className="text-gray-700 hover:text-[#4F2683] font-semibold transition-colors">
+                      +971-505189925
+                    </a>
                   </div>
                 </div>
  
-                <div className="flex items-center gap-3">
-                  <Phone className="w-4.5 h-4.5 text-[#4F2683] shrink-0" />
+                <div className="flex items-start gap-3">
+                  <Phone className="w-4.5 h-4.5 text-[#4F2683] shrink-0 mt-0.5" />
                   <div>
-                    <span className="text-[#1A1A1A] font-bold uppercase tracking-wider block font-sans">Telephone Contact</span>
-                    <p className="text-gray-600">+971 4 226 2211</p>
+                    <span className="text-[#1A1A1A] font-bold uppercase tracking-wider block font-sans">Tel</span>
+                    <a href="tel:+97143386877" className="text-gray-700 hover:text-[#4F2683] font-semibold transition-colors">
+                      +971-43386877
+                    </a>
                   </div>
                 </div>
  
-                <div className="flex items-center gap-3">
-                  <Mail className="w-4.5 h-4.5 text-[#4F2683] shrink-0" />
+                <div className="flex items-start gap-3">
+                  <Mail className="w-4.5 h-4.5 text-[#4F2683] shrink-0 mt-0.5" />
                   <div>
-                    <span className="text-[#1A1A1A] font-bold uppercase tracking-wider block font-sans">Inquiry Mailbox</span>
-                    <p className="text-gray-600">info@alqadah.com | sales@alqadah.com</p>
+                    <span className="text-[#1A1A1A] font-bold uppercase tracking-wider block font-sans">Email Inquiries</span>
+                    <div className="flex flex-col gap-1 mt-0.5">
+                      <a href="mailto:sempertex@qadah.ae" className="text-gray-700 hover:text-[#4F2683] font-medium transition-colors">
+                        sempertex@qadah.ae
+                      </a>
+                      <a href="mailto:sales@qadah.ae" className="text-gray-700 hover:text-[#4F2683] font-medium transition-colors">
+                        sales@qadah.ae
+                      </a>
+                    </div>
                   </div>
                 </div>
  
@@ -915,26 +929,26 @@ export default function App() {
                   <MapPin className="w-4 h-4" /> Official Location Pin
                 </span>
                 <a 
-                  href="https://maps.google.com/maps?q=Al%20Qadah%20Trading%20Co.%20LLC,%20Sabkha%20Road,%20Deira,%20Dubai,%20UAE" 
+                  href="https://maps.google.com/maps?q=Al%20Khail%20Mall,%20Latifa%20Bint%20Hamdan%20Street,%20Al%20Quoz,%20Dubai,%20UAE" 
                   target="_blank" 
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer" 
                   className="text-[10px] text-gray-500 hover:text-[#4F2683] font-bold uppercase tracking-wider flex items-center gap-1 transition-colors font-sans"
                 >
                   Open in Maps <ExternalLink className="w-3 h-3" />
                 </a>
               </div>
  
-              {/* Google Maps Iframe pointing precisely to Al Qadah Trading Co LLC Sabkha Road Deira Dubai */}
+              {/* Google Maps Iframe pointing to Al Khail Mall / Latifa Bint Hamdan Street Al Quoz Dubai */}
               <div className="border border-gray-200 rounded-2xl overflow-hidden shadow-lg relative h-[320px] bg-white">
                 <iframe 
-                  src="https://maps.google.com/maps?q=Al%20Qadah%20Trading%20Co.%20LLC,%20Sabkha%20Road,%20Deira,%20Dubai,%20UAE&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                  src="https://maps.google.com/maps?q=Al%20Khail%20Mall,%20Latifa%20Bint%20Hamdan%20Street,%20Al%20Quoz,%20Dubai&t=&z=15&ie=UTF8&iwloc=&output=embed" 
                   width="100%" 
                   height="100%" 
                   style={{ border: 0 }} 
                   allowFullScreen={true} 
                   loading="lazy" 
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Al Qadah Trading Co LLC Sabkha Road Deira Dubai Location"
+                  title="Al Qadah Trading LLC Al Quoz Dubai Location"
                   className="w-full h-full"
                 />
               </div>
@@ -944,11 +958,11 @@ export default function App() {
  
           {/* Bottom Copyright Row */}
           <div className="pt-8 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-[10px] text-gray-500 font-bold uppercase tracking-widest">
-            <p>© 2026 Sempertex AE. All Rights Reserved. Distributed by Al Qadah Trading Co. LLC.</p>
+            <p>© 2026 Sempertex AE. All Rights Reserved. Distributed by Al Qadah Trading LLC.</p>
             <div className="flex gap-4">
               <span>Made of 100% Biodegradable Latex</span>
               <span>•</span>
-              <span>Certified Colombian Import</span>
+              <span>Premier Latex Quality</span>
             </div>
           </div>
  
